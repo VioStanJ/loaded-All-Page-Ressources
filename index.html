@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Load Img</title>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	</head>
+	<body style="visibility: hidden; overflow: hidden;">
+
+		<div>
+			<h1 id="res"></h1>
+		</div>
+
+		<div>
+			<img src="https://www.whotelsthestore.com/images/products/lrg/w-hotels-wrinkle-resistant-sheet-sets-WHO-106-BLD-300-WH_lrg.jpg">
+		</div>
+
+		<div>
+			<img src="https://www.whotelsthestore.com/images/products/xlrg/w-hotels-ribbed-duvet-cover-WHO-135-POL-WH_xlrg.jpg">
+		</div>
+		
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(window).bind('load',function(){
+					$('body').css('visibility','visible');
+					$('body').css('overflow','auto');
+					$('#res').text('All Loaded');
+				});
+
+			});
+		</script>
+	</body>
+</html>
